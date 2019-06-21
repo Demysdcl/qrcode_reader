@@ -2,7 +2,7 @@
 
 A Flutter plugin for reading QR Codes with the camera.
 
-### Example
+### Read Qrcode
 
 ``` dart
 import 'package:qrcode_reader/qrcode_reader.dart';
@@ -22,4 +22,18 @@ Future<String> futureString = new QRCodeReader()
 These options are Android only (with the exception of setFrontCamera(bool)), this is the simplest way of plugin usage:
 ``` dart
 Future<String> futureString = new QRCodeReader().scan();
+```
+
+### Open URL
+
+``` dart
+import 'package:url_launcher/url_launcher.dart';
+```
+
+``` dart
+_launchURL(String url) async {
+  if (await canLaunch(url)) {
+    await launch(url);
+  }
+}
 ```
