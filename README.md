@@ -1,4 +1,4 @@
-# QRCode Reader plugin for Flutter
+# QRCode Reader and URL Launcher plugins for Flutter
 
 A Flutter plugin for reading QR Codes with the camera.
 
